@@ -21,21 +21,23 @@
             height: 200px;
             width: auto;
         }
-        .video-wrapper {
+       .video-wrapper {
             position: relative;
             width: 100%;
             max-width: 800px;
             aspect-ratio: 16 / 9;
+            margin: 2rem auto;
             background: black;
-            overflow: hidden;
-            border-radius: 12px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .video-wrapper video {
+        .video-wrapper iframe {
             height: 100%;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+            aspect-ratio: 9 / 16;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -106,9 +108,10 @@
             </div>
         </div>
 
-       <div class="video-wrapper">
-            <video src="img/changingterminal.mp4" controls></video>
-        </div>
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/Jw81VLaAFAU" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
     </section>
 
     <!-- Conclusion -->
@@ -171,4 +174,5 @@
 <script src="expandImage.js"></script>
 
 </body>
+
 </html>
