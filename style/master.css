@@ -1,0 +1,95 @@
+ html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #111;
+    color: white;
+}
+.content-section {
+     padding: 60px 0;
+}
+.card {
+    background-color: #1f1f1f;
+    border: none;
+}
+.evidenceimg{
+    height: 200px;
+    width: auto;
+}
+
+ .custom-navbar {
+    background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+    padding: 1rem 3rem;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.custom-navbar.scrolled {
+    background: #121212;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    position: relative;
+    color: white !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00bcd4 !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #00bcd4;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.custom-btn {
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 18px;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0097a7;
+    transform: translateY(-2px);
+}
+
+.homeSec {
+    padding: 100px 0;
+}
+
+.profilepic {
+    height: 400px;
+    width: auto;
+}
+.card {
+    background-color: #222;
+    color: white;
+    border: none;
+}
+.samsungimg {
+    height: 300px;
+    object-fit: cover;
+}
+#about { background-color: #1c1c1c; }
+#skills { background-color: #181818; }
+#projects { background-color: #141414; }
